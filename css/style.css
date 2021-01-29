@@ -1,0 +1,73 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.canvasContainer {
+    margin: auto;
+}
+
+#miCanvas {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.functionBtn{
+    padding: .5em;
+    margin: .5em;
+    width: 200px;
+    border: none;
+    border-radius: .2em;
+    background-color: #424656;
+    color: white;
+    outline: none;
+}
+
+.functionBtn:active {
+    background-color: #2c2f3a;
+}
+
+.clearCanvasBtn{
+    background-color: #ff0044;
+    color: white;
+    padding: .5em;
+    margin: 1em 0 1em 0;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: .2em;
+    position: relative;
+    z-index: 1;
+}
+
+.clearCanvasBtn:active{
+    background-color: #c90237;
+}
+
+.desktopMenu {
+    display: none;
+}
+
+@media only screen and (min-width: 992px){
+    #miCanvas {
+        /* width: 600px; */
+        height: 570px;
+    }
+
+    .desktopMenu {
+        display: block;
+        padding: 1em;
+        width: 30vw;
+        border-right: 1px solid gray;
+    }
+
+    .mobileMenu {
+        display: none;
+    }
+
+    .desktopMenuFunctions{
+        height: 100%;
+    }
+}
